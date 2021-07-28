@@ -17,8 +17,6 @@ df.describe()
 
 df.info()
 
-#values = {"ph": np.mean(df['ph']), "B": 1, "C": 2, "D": 3}
-#df.fillna(value=values)
 
 df['ph'].fillna(np.mean(df['ph']),inplace=True)
 df['Sulfate'].fillna(np.mean(df['Sulfate']),inplace=True)
